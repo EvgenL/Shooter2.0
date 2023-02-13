@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using UnityEngine;
 
 namespace DefaultNamespace
@@ -9,11 +10,52 @@ namespace DefaultNamespace
 
         private void Update()
         {
+            // switch ()
+            // {
+            //     case 1:
+            //         transform.position = transform.position;
+            //         break;
+            //     case 2:
+            //         transform.position = transform.position;
+            //         break;
+            //     case 3:
+            //         transform.position = transform.position;
+            //         break;
+            // }
+            //
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
-                weapons[0].SetActive(true);
-                weapons[1].SetActive(false);
-                weapons[2].SetActive(false);
+                SetWeapon(0);
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                SetWeapon(1);
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                SetWeapon(2);
+            }
+        }
+
+        private void SetWeapon(int weaponNumber)
+        {
+            // почитать Linq
+            
+            for (int i = 0; i < weapons.Length; i++)
+            {
+                // bool isWeaponCorrect = (i == weaponNumber);
+                
+                var currentWeapon = weapons[i];
+
+                // Если текущая итерация равна номеру запрошенного оружия, то:
+                if (i == weaponNumber)
+                {
+                    currentWeapon.SetActive(true);
+                }
+                else
+                {
+                    currentWeapon.SetActive(false);
+                }
             }
         }
     }
