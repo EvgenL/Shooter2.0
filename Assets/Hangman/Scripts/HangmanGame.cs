@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -8,6 +9,7 @@ namespace Hangman.Scripts
 {
     public class HangmanGame : MonoBehaviour
     {
+        [SerializeField] private TextMeshProUGUI _textField;
         [SerializeField] private int hp = 7;
         
         private List<char> guessedLetters = new List<char>();
@@ -103,7 +105,7 @@ namespace Hangman.Scripts
             
             // print(string.Join(", ", guessedLetters));
             print(stringToPrint);
-            
+            _textField.text = stringToPrint;
         }
     }
 }
