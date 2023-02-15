@@ -35,6 +35,10 @@ namespace DefaultNamespace
             {
                 SetWeapon(2);
             }
+            if (Input.GetKeyDown(KeyCode.Alpha4))
+            {
+                SetWeapon(3);
+            }
         }
 
         private void SetWeapon(int weaponNumber)

@@ -782,6 +782,7 @@ Transform:
   - {fileID: 1765113538}
   - {fileID: 1555672047}
   - {fileID: 802047535}
+  - {fileID: 854618937}
   m_Father: {fileID: 2129032851}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -801,6 +802,7 @@ MonoBehaviour:
   - {fileID: 1765113537}
   - {fileID: 1555672046}
   - {fileID: 802047534}
+  - {fileID: 854618936}
 --- !u!1 &542508511
 GameObject:
   m_ObjectHideFlags: 0
@@ -1188,7 +1190,7 @@ GameObject:
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &802047535
 Transform:
   m_ObjectHideFlags: 0
@@ -1219,6 +1221,113 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   throwForce: 50
   grenadePrefab: {fileID: 1415556611663978, guid: 216ec6e5fef3e254d86b21071e614d66, type: 3}
+--- !u!1001 &843632968
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 854618937}
+    m_Modifications:
+    - target: {fileID: 1339690406208628, guid: 36c1d95ccf895438f86239987ae86648, type: 3}
+      propertyPath: m_Name
+      value: grenade2_lowpoly_prefab 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346878640836584, guid: 36c1d95ccf895438f86239987ae86648, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346878640836584, guid: 36c1d95ccf895438f86239987ae86648, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346878640836584, guid: 36c1d95ccf895438f86239987ae86648, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346878640836584, guid: 36c1d95ccf895438f86239987ae86648, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346878640836584, guid: 36c1d95ccf895438f86239987ae86648, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99114716
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346878640836584, guid: 36c1d95ccf895438f86239987ae86648, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.13276812
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346878640836584, guid: 36c1d95ccf895438f86239987ae86648, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346878640836584, guid: 36c1d95ccf895438f86239987ae86648, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346878640836584, guid: 36c1d95ccf895438f86239987ae86648, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 15.259
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346878640836584, guid: 36c1d95ccf895438f86239987ae86648, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346878640836584, guid: 36c1d95ccf895438f86239987ae86648, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -2926335006458572856, guid: 36c1d95ccf895438f86239987ae86648, type: 3}
+    - {fileID: -6229830827672596546, guid: 36c1d95ccf895438f86239987ae86648, type: 3}
+    - {fileID: 2485756949040419046, guid: 36c1d95ccf895438f86239987ae86648, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 36c1d95ccf895438f86239987ae86648, type: 3}
+--- !u!1 &854618936
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 854618937}
+  - component: {fileID: 854618938}
+  m_Layer: 0
+  m_Name: ImpactGrenadeThrower
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &854618937
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854618936}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.14400001, y: -0.17299998, z: 0.5656}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1709070757}
+  m_Father: {fileID: 474161527}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &854618938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854618936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4c4e07403e346efa2963bdebbb0313c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  throwForce: 50
+  grenadePrefab: {fileID: 1339690406208628, guid: 36c1d95ccf895438f86239987ae86648, type: 3}
 --- !u!1 &874605735
 GameObject:
   m_ObjectHideFlags: 0
@@ -2411,6 +2520,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1232051095231081419, guid: 6625ac0e1b69d4b818daf6d617f69685, type: 3}
   m_PrefabInstance: {fileID: 1526019192}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1709070757 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4346878640836584, guid: 36c1d95ccf895438f86239987ae86648, type: 3}
+  m_PrefabInstance: {fileID: 843632968}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1764214107
 GameObject:
   m_ObjectHideFlags: 0
@@ -2967,9 +3081,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4135013735270702863, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5393215578589016642, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_Name
       value: PlayerCapsule
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_RootOrder
