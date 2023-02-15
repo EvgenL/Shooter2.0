@@ -8,7 +8,7 @@ namespace DefaultNamespace
         private void Start()
         {
             // создать угол идентично тому, как мы его видим в редакторе - через углы эйлера
-            var rot = Quaternion.Euler(45 += Time.deltaTime, 0, 0);
+            var rot = Quaternion.Euler(45, 0, 0);
 
             transform.rotation = rot;
 
