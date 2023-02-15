@@ -10,6 +10,7 @@ namespace DefaultNamespace
         [SerializeField] private float force = 4; // сила выстрела
         [SerializeField] private float damage = 1; // урон от выстрела
         [SerializeField] private GameObject impactPrefab; // префаб эффекта попадания
+        [SerializeField] private GameObject muzzleFlashPrefab; // префаб эффекта выстрела
         [SerializeField] private Transform shootPoint; // точка, отуда идет выстрел
         [SerializeField] private float spreadConfig = 0.1f;
 
@@ -19,6 +20,14 @@ namespace DefaultNamespace
             // Если нажимаем левую(0) кнопку мыши
             if (Input.GetMouseButtonDown(0))
             {
+                // Создать эффект выстрела
+                if (muzzleFlashPrefab != null)
+                {
+                    var flashEffect = Instantiate(muzzleFlashPrefab, shootPoint);
+                    Destroy(flashEffect, 0.2f);
+                } 
+                
+                
                 var randomX = Random.Range(-spreadConfig / 2, spreadConfig / 2);
                 var randomY = Random.Range(-spreadConfig / 2, spreadConfig / 2);
                 var spread = new Vector3(randomX, randomY, 0f);
