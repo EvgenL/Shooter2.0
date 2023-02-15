@@ -56,6 +56,18 @@ public class Test : MonoBehaviour
         Debug.Log(result);
 
         var t = GetComponent<Rigidbody>();
+
+        // if (gameObject.activeSelf)
+        // {
+        //     gameObject.SetActive(false);
+        // }
+        // else
+        // {
+        //     gameObject.SetActive(true);
+        // }
+        //
+        //
+        // gameObject.SetActive(!gameObject.activeSelf);
     }
 
     private int CalculateSum(out int varible2)

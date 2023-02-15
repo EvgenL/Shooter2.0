@@ -25,9 +25,9 @@ namespace DefaultNamespace
                 {
                     var flashEffect = Instantiate(muzzleFlashPrefab, shootPoint);
                     Destroy(flashEffect, 0.2f);
-                } 
-                
-                
+                }
+
+
                 var randomX = Random.Range(-spreadConfig / 2, spreadConfig / 2);
                 var randomY = Random.Range(-spreadConfig / 2, spreadConfig / 2);
                 var spread = new Vector3(randomX, randomY, 0f);
