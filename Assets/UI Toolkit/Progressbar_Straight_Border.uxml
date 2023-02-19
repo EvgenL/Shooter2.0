@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Container" style="height: 350px;">
+        <ui:VisualElement name="Container_Header" style="flex-direction: row; -unity-font: url(&apos;project://database/Assets/Shooter/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&amp;guid=e3265ab4bf004d28a9537516768c1c75&amp;type=3#LiberationSans&apos;); font-size: 25px;">
+            <ui:Label text="LOADING…." display-tooltip-when-elided="true" name="txt_Loading" style="flex-grow: 1; -unity-font-style: bold; color: rgba(0, 230, 255, 255);" />
+            <ui:Label text="0%" display-tooltip-when-elided="true" name="txt_Percentage" style="-unity-font-style: italic; color: rgba(0, 230, 255, 255);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Container_Bar" style="height: 75px; border-left-color: rgba(0, 230, 255, 255); border-right-color: rgba(0, 230, 255, 255); border-top-color: rgba(0, 230, 255, 255); border-bottom-color: rgba(0, 230, 255, 255); border-left-width: 3px; border-right-width: 3px; border-top-width: 3px; border-bottom-width: 3px;">
+            <ui:VisualElement name="bar_Progress" style="height: 100%; width: 85%; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-color: rgba(0, 230, 255, 255);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
