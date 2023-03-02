@@ -6,23 +6,11 @@ namespace DefaultNamespace
 {
     public class WeaponSwap : MonoBehaviour
     {
+        public Weapon CurrentWeapon { get; private set; } // получить может кто угодно, записать могу только я
         [SerializeField] private GameObject[] weapons;
 
         private void Update()
         {
-            // switch ()
-            // {
-            //     case 1:
-            //         transform.position = transform.position;
-            //         break;
-            //     case 2:
-            //         transform.position = transform.position;
-            //         break;
-            //     case 3:
-            //         transform.position = transform.position;
-            //         break;
-            // }
-            //
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
                 SetWeapon(0);
@@ -41,6 +29,11 @@ namespace DefaultNamespace
             }
         }
 
+        private void Start()
+        {
+            SetWeapon(0);
+        }
+
         private void SetWeapon(int weaponNumber)
         {
             // почитать Linq
@@ -49,12 +42,13 @@ namespace DefaultNamespace
             {
                 // bool isWeaponCorrect = (i == weaponNumber);
                 
-                var currentWeapon = weapons[i];
+                GameObject currentWeapon = weapons[i];
 
                 // Если текущая итерация равна номеру запрошенного оружия, то:
                 if (i == weaponNumber)
                 {
                     currentWeapon.SetActive(true);
+                    CurrentWeapon = currentWeapon.GetComponent<Weapon>();
                 }
                 else
                 {

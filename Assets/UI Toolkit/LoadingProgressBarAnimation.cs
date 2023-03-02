@@ -1,9 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class LoadingProgressBarAnimation : MonoBehaviour
+public class LoadingProgressBarAnimation : MonoBehaviour, IDisposable
 {
     private VisualElement _root;
     private VisualElement _loadingProgressBar;
@@ -30,5 +31,29 @@ public class LoadingProgressBarAnimation : MonoBehaviour
         style.width = Length.Percent(percent);
         // _loadingProgressBar.style = style;
 
+    }
+
+    private void ReleaseUnmanagedResources()
+    {
+        // TODO release unmanaged resources here
+    }
+
+    protected virtual void Dispose(bool disposing)
+    {
+        ReleaseUnmanagedResources();
+        if (disposing)
+        {
+        }
+    }
+
+    public void Dispose()
+    {
+        Dispose(true);
+        GC.SuppressFinalize(this);
+    }
+
+    ~LoadingProgressBarAnimation()
+    {
+        Dispose(false);
     }
 }
